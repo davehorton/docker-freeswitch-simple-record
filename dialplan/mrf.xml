@@ -1,4 +1,3 @@
-<!-- http://wiki.freeswitch.org/wiki/Dialplan_XML -->
 <include>
   <context name="mrf">
 
@@ -7,7 +6,7 @@
         <action application="pre_answer"/>
         <action application="sleep" data="1000"/>
         <action application="answer"/>   
-        <action application="record" data="record.wav"/>
+        <action application="record" data="/tmp/sample-recording.wav"/>
      </condition> 
     </extension>
   </context>
